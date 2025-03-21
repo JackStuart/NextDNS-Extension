@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>NextDNS Allowlist Manager</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h2>NextDNS Allowlist Manager</h2>
+    
+    <div id="setupRequired" style="display: none; width: 100%;">
+      <p>Please configure your NextDNS API key and profile ID first.</p>
+      <button id="openSettingsButton">Open Settings</button>
+    </div>
+    
+    <div id="mainContent" style="display: none; width: 100%;">
+      <div class="domain-info">
+        <p>Current domain:</p>
+        <strong id="currentDomain">Loading...</strong>
+      </div>
+      
+      <button id="addToAllowlistButton">Add to NextDNS Allowlist</button>
+      
+      <div class="settings-link">
+        <a href="#" id="settingsLink">Settings</a>
+      </div>
+    </div>
+    
+    <div id="status" class="status"></div>
+  </div>
+  
+  <script type="module" src="popup.js"></script>
+</body>
+</html>

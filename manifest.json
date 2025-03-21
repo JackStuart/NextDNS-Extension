@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "NextDNS Allowlist Manager",
+  "version": "1.0",
+  "description": "Add websites to your NextDNS allowlist with a single click",
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://api.nextdns.io/profiles/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Add to NextDNS Allowlist"
+  },
+  "options_page": "options.html",
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  }
+}

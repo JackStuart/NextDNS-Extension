@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>NextDNS Allowlist Manager - Settings</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <h1>NextDNS Allowlist Manager - Settings</h1>
+  
+  <div class="security-notice">
+    <p><strong>Security Notice:</strong> Your API key provides access to your NextDNS settings. Only use this extension on trusted devices.</p>
+  </div>
+  
+  <div class="form-group">
+    <label for="apiKey">NextDNS API Key:</label>
+    <input type="password" id="apiKey" placeholder="Enter your NextDNS API key">
+    <div class="show-api-key">
+      <input type="checkbox" id="showApiKey">
+      <label for="showApiKey">Show API Key</label>
+    </div>
+    <div class="input-info">
+      Find your API key in the NextDNS account settings
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="profileId">NextDNS Profile ID:</label>
+    <input type="text" id="profileId" placeholder="Enter your NextDNS profile ID">
+    <div class="input-info">
+      Your profile ID is in the URL when viewing your NextDNS profile
+    </div>
+  </div>
+
+  <div class="buttons">
+    <button id="saveButton">Save Settings</button>
+    <button id="testConnectionButton">Test Connection</button>
+  </div>
+  
+  <div id="status"></div>
+
+  <script type="module" src="options.js"></script>
+</body>
+</html>
